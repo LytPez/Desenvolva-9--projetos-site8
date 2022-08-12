@@ -1,17 +1,36 @@
-
+/*
+definindo cor de fundo degrade começando 
+da parte de baixo do canto esquerdo do body
+definindo altura de 140vh para que equivala 
+a quantidade de pixeil da imagem que foi adicionada linhas a baixo
+*/
 body{
   background-image: linear-gradient(to left bottom, rgb(122,197,187), rgb(5,155,203));
   height: 140vh;
 }
+
+/*
+alinhando ao centro
+*/
 header{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/*
+definindo cor, e tranformando texto todo em letras maisculas
+*/
 header h1{
   color: white;
   text-transform: uppercase;
 }
+
+/*
+alinhando verticalmente ao centro e horizoltamente no começo,
+organizando em colunas, definindo 100% de largura do main, e 100% da altura da pagina,
+adicionando imagem de fundo e ordenando para não repetir
+*/
 main{
   display: flex;
   justify-content: flex-start;
@@ -22,23 +41,44 @@ main{
   background-image: url(assets/bg.png);
   background-repeat: no-repeat;
 }
+
+/*
+definindo cor, espaçamento externo e interno
+*/
 main p{
   color: white;
   margin: 0px;
   padding: 0px;
 }
+
+/*
+definindo espaçamento externo ao topo
+*/
 main img{
   margin-top: 10px;
 }
+
+/*
+definindo cor
+*/
 main span{
   color: white;
 }
+
+/*
+alinhando ao centro e organizando em colunas
+*/
 .formulario{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+
+/*
+definindo cor de fundo, opcidade, bordas arredondadas, retirando 
+bordas automaticas, definindo largura, e espaçamento externo há baixo
+*/
 main input{
   background-color: aliceblue;
   opacity: 70%;
@@ -47,15 +87,28 @@ main input{
   width: 450px;
   margin-bottom: 10px;
 }
+
+/*
+definindo largura, e espaçamento equivalente entre um e outro
+*/
 .inputs{
   width: 450px;
   display: flex;
   justify-content: space-between;
   
 }
+
+/*
+definindo largura
+*/
 .inputs input{
   width: 200px;
 }
+
+/*
+definindo cor de fundo, opcidade, bordas arredondadas, retirando 
+bordas automaticas, definindo largura, e espaçamento externo há baixo
+*/
 main textarea{
   background-color: aliceblue;
   opacity: 70%;
@@ -64,6 +117,11 @@ main textarea{
   width: 450px;
   margin-bottom: 10px;
 }
+
+/*
+definindo altura, largura, definindo transparencia de fundo, 
+bordas arredondadas, cor, e borda
+*/
 button{
   height: 40px;
   width: 100px;
